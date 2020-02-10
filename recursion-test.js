@@ -1,9 +1,4 @@
-const factorial = (num) => {
-    if (num <= 1) { return num }
-    else {
-        return num * factorial(num - 1)
-    }
-}
+const factorial = n => n <= 1 ? n : n * factorial(n - 1)
 
 console.log(factorial(0))
 console.log(factorial(1))
